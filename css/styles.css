@@ -1,0 +1,114 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1B1B1E;
+  color: #D8DBE2;
+  max-width: 700px;
+  margin: auto;
+  padding: 10rem 10rem;
+  line-height: 1.6;
+}
+
+.about {
+    padding: 0 2rem;
+}
+
+.post-box {
+    border-radius: 15px;
+    border: 2px solid #373F51;
+
+    margin: 4rem 0rem;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+.post-box .top {
+    padding: 0px 1rem;
+}
+
+.post-box .list .post {
+    line-height: 1;
+    border-radius: 10px;
+    padding: 1px 1rem;
+    user-select: none;
+}
+
+.post-box .list .post:hover {
+    background-color: #373F51;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: auto;
+        padding: 10rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 0 0rem;
+    }
+    div.post-box {
+        margin: 4rem 0rem;
+        border: 0;
+        padding: 0;
+    }
+}
+
+.header {
+    font-weight: bold;
+    color: #D8DBE2;
+}
+
+.content {
+    font-weight: lighter;
+    color: #7e8cac;
+}
+
+a.page_link {
+    color: #373F51;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+a.page_link:hover {
+    color: #A9BCD0;
+    text-decoration: none;
+}
+
+.achievement-ticker {
+    font-size: 12px;
+    padding-block: 12px;
+    overflow: hidden;
+    display: flex;
+
+    --gap: 2rem;
+    gap: var(--gap);
+}
+
+.achievement-ticker div {
+    display: flex;
+    gap: var(--gap);
+
+    animation: scroll 20s linear infinite;
+}
+
+.achievement-ticker div {
+    text-wrap-mode: nowrap;
+}
+
+.achievement-ticker:hover div {
+    animation-play-state: paused;
+}
+
+.achievement-ticker span {
+    color: #7e8cac;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
