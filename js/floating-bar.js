@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('read-more').addEventListener('click', () => switchPage('about'))
 
   // Default to home
-  switchPage('about');
+  switchPage('home');
 });
