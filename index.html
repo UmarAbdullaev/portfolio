@@ -7,6 +7,7 @@
             <div class="navigation-bar">
                 <div class="floating-bar-button"id="home"><i data-lucide="home"></i></div>
                 <div class="floating-bar-button"id="about"><i data-lucide="user"></i></div>
+                <div class="floating-bar-button"id="projects"><i data-lucide="joystick"></i></div>
             </div>
             <!--<div class="floating-bar-button"id="mode-toggle"><i data-lucide="moon"></i></div>-->
         </div>
@@ -15,7 +16,7 @@
             <div class="main">
                 <h2 class="header">Umar Abdullayev is a game developer</h2>
                 <p class="content">Welcome to my corner of the web where I write just about anything that interests me.</p>
-                <p class="content">I am currently working on a game project and diving deeper into web development. <a href="#about" class="page_link">Read more »</a></p>
+                <p class="content">I am currently working on a game project and diving deeper into web development. <span class="page-link" id="read-more">Read more »</a></p>
                 
                 <div class="achievement-ticker" id="achievementTicker"></div>
             </div>
@@ -34,16 +35,27 @@
                 </div>
                 <div class="image">
                     <img src="tokyo.png">
-                    <p>At home</p>
+                    <p>September, 2024</p>
                 </div>
-                <p class="content">*Long ass description goes here*</p>
+                <p class="content">I'm an <span id="age"></span> years old, and I live in Tashkent. I've been passionate about game development since middle school,
+                    and over the years, I've gained solid experience working on various projects. While game development remains close to my heart, I no longer want to limit myself to just the gaming industry</p>
+                <p class="content">I've always been interested in web development, and this website is my first fully completed one. Recently,
+                    I also began exploring street photography — you can find some of my shots on Instagram at <a href="https://www.instagram.com/abdullayev.shots" class="link">@abdullayev.shots</a>
+                </p>
+                <p class="content">My personal telegram channel where I post updates: <a href="https://t.me/liwait_life" class="link">@liwait_life</a></p>
+                <p class="content">Reach me via email: <a href="mailto:umarabdullaev151@gmail.com" class="link">umarabdullaev151@gmail.com</a></p>
             </div>
+        </div>
+
+        <div class="page projects" id="page-projects">
+            <p>Working on it</p>
         </div>
         
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/achievements.js"></script>
         <script src="js/posts.js"></script>
         <script src="js/floating-bar.js"></script>
+        <script src="js/about-page.js"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
     </body>
 </html>
