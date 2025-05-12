@@ -1,22 +1,49 @@
 <html>
     <head>
-        <link rel="stylesheet" href="css/styles.css">
+        
     </head>
     <body>
-        <div class="about">
-            <h2 class="header">Umar Abdullayev is a game developer</h2>
-            <p class="content">Welcome to my corner of the web where I write just about anything that interests me.</p>
-            <p class="content">I am currently working on a game project and diving deeper into web development. <a href="#about" class="page_link">Read more »</a></p>
-            
-            <div class="achievement-ticker" id="achievementTicker"></div>
+        <div class="floating-bar">
+            <div class="navigation-bar">
+                <div class="floating-bar-button"id="home"><i data-lucide="home"></i></div>
+                <div class="floating-bar-button"id="about"><i data-lucide="user"></i></div>
+            </div>
+            <!--<div class="floating-bar-button"id="mode-toggle"><i data-lucide="moon"></i></div>-->
         </div>
 
-        <div class="post-box">
-            <div class="top"><h3 class="content">Posts</h3></div>
-            <div class="list" id="postList"></div>
+        <div class="page" id="page-home">
+            <div class="main">
+                <h2 class="header">Umar Abdullayev is a game developer</h2>
+                <p class="content">Welcome to my corner of the web where I write just about anything that interests me.</p>
+                <p class="content">I am currently working on a game project and diving deeper into web development. <a href="#about" class="page_link">Read more »</a></p>
+                
+                <div class="achievement-ticker" id="achievementTicker"></div>
+            </div>
+
+            <div class="post-box">
+                <div class="top"><h3 class="content">Posts</h3></div>
+                <div class="list" id="postList"></div>
+            </div>
         </div>
 
+        <div class="page about" id="page-about">
+            <div class="main">
+                <div class="top">
+                    <h2 class="header">Hello</h2>
+                    <h3 class="content">I am Umar</h3>
+                </div>
+                <div class="image">
+                    <img src="tokyo.png">
+                    <p>At home</p>
+                </div>
+                <p class="content">*Long ass description goes here*</p>
+            </div>
+        </div>
+        
+        <link rel="stylesheet" href="css/styles.css">
         <script src="js/achievements.js"></script>
         <script src="js/posts.js"></script>
+        <script src="js/floating-bar.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
     </body>
 </html>
