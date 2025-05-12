@@ -31,7 +31,7 @@ body {
     user-select: none;
 }
 
-.post-box .list .post:hover {
+.post-box .list .post:active {
     background-color: #373F51;
 }
 
@@ -58,10 +58,9 @@ body {
     transition: background-color .2s;
 }
 
-.navigation-bar:hover {
+.navigation-bar:active {
     background-color: #373f513f;
 }
-
 
 .floating-bar-button {
     width: 3rem;
@@ -71,16 +70,6 @@ body {
     align-content: center;
     color: #7e8cac;
     transition: color .2s, transform .2s;
-}
-
-.floating-bar-button:hover {
-    color: #A9BCD0;
-    transform: scale(1.15) rotate(5deg);
-}
-
-.floating-bar-button.active {
-    background-color: #A9BCD0;
-    color: #1B1B1E;
 }
 
 .page {
@@ -153,7 +142,7 @@ body {
     user-select: none;
 }
 
-.page-link:hover {
+.page-link:active {
     color: #A9BCD0;
     text-decoration: none;
     cursor: pointer;
@@ -180,7 +169,7 @@ body {
     text-wrap-mode: nowrap;
 }
 
-.achievement-ticker:hover div {
+.achievement-ticker:active div {
     animation-play-state: paused;
 }
 
@@ -220,7 +209,42 @@ a.link {
     transition: color .25s;
 }
 
-a.link:hover {
+@media (hover: hover) {
+    a.link:hover {
+        color: #D8DBE2;
+        text-decoration-color: #555963;
+    }
+
+    .achievement-ticker:hover div {
+        animation-play-state: paused;
+    }
+
+    .page-link:hover {
+        color: #A9BCD0;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .post-box .list .post:hover {
+        background-color: #373F51;
+    }
+
+    .navigation-bar:hover {
+        background-color: #373f513f;
+    }
+
+    .floating-bar-button:hover {
+        color: #A9BCD0;
+        transform: scale(1.15) rotate(5deg);
+    }
+}
+
+.floating-bar-button.active {
+    background-color: #A9BCD0;
+    color: #1B1B1E;
+}
+
+a.link:active {
     color: #D8DBE2;
     text-decoration-color: #555963;
 }
