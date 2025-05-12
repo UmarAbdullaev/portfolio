@@ -9,3 +9,4 @@ const birthDate = new Date('2007-06-10'); // replace with your actual birthdate
   }
 
 updateAge(); // initial call
+setInterval(updateAge, 1000);
