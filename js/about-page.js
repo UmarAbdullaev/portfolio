@@ -8,5 +8,4 @@ const birthDate = new Date('2007-06-10'); // replace with your actual birthdate
     document.getElementById('age').textContent = ageInYears.toFixed(9); // up to 9 decimals
   }
 
-  updateAge(); // initial call
-  setInterval(updateAge, 250); // update every second
+updateAge(); // initial call

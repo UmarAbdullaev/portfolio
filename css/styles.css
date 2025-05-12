@@ -4,7 +4,7 @@ body {
   color: #D8DBE2;
   max-width: 700px;
   margin: auto;
-  padding: 10rem 10rem;
+  padding: 10rem 10rem 2rem 10rem;
   line-height: 1.6;
 }
 
@@ -167,6 +167,7 @@ body {
 
 .achievement-ticker div {
     text-wrap-mode: nowrap;
+    user-select: none;
 }
 
 .achievement-ticker:active div {
@@ -247,4 +248,22 @@ a.link {
 a.link:active {
     color: #D8DBE2;
     text-decoration-color: #555963;
+}
+
+footer {
+    margin: 6rem 2rem 0rem 0rem;
+}
+
+footer span {
+    font-size: small;
+    color: #7e8cac;
+}
+
+footer a {
+    color: #A9BCD0;
+    transition: color .2s;
+}
+
+footer a:hover {
+    color: #D8DBE2;
 }
